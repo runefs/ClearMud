@@ -1,6 +1,12 @@
-﻿using ClearMudSharp;
+﻿/* Copyright 2011 by Rune Funch Søltoft
+ * the code my not be used commercially
+ * and when used in any form this copyright notice shall
+ * be included in all parts that uses this code
+ */
+using ClearMudSharp;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ClearMudSharp.Traits;
+using ClearMudSharp.Tests;
 
 namespace Tests.ClearMudSharp
 {
@@ -21,6 +27,16 @@ namespace Tests.ClearMudSharp
             context.Doit(100m);
         }
 
+         /// <summary>
+        ///A test for Create
+        ///</summary>
+        [TestMethod]
+        public void TraitsMoneyTransferTest()
+        {
+            var context = new MoneyTransferWithTraits();
+            context.Transfer();
+        }
+        
         [TestMethod]
         public void TestCreate()
         {
