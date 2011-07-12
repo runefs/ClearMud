@@ -23,6 +23,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>ClearMud.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -66,10 +68,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClearMudSharp.Traits\ClearMudSharp.Traits.csproj">
+      <Project>{E4AE046C-19A2-4D37-9C90-F469F35B12D3}</Project>
+      <Name>ClearMudSharp.Traits</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClearMud\ClearMudSharp.csproj">
       <Project>{F8CA169E-2871-4151-B075-DDC0819EC4B9}</Project>
       <Name>ClearMudSharp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClearMud.ruleset">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

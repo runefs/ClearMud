@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rules FriendlyName="Clear Mud rules">
+  <Rule TypeName="InterfaceMethodsMustBeImplemented" Category="CustomRules.Naming" CheckId="CR1001">
+    <Name>Implement all interface methods</Name>
+    <Description>Checking if all methods of a trait interface is implemented by the first type argument giving when using the traits interface</Description>
+    <Url></Url>
+    <Resolution>All methods of {0} marked with TraitAttribute must be implemented by the {1} given as first type argument. {2}</Resolution>
+    <MessageLevel Certainty="100">Error</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email />
+    <Owner />
+  </Rule>
+</Rules>

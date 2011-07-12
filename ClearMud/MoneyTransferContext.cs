@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 
 namespace ClearMudSharp
 {
@@ -21,16 +22,13 @@ namespace ClearMudSharp
                 return true;
             }
         }
-
+        public static readonly string test = "axel";
         private ISource Source;
         private Account Destination;
         public void Doit(decimal amount)
         {
+            Contract.Assert("foo" == test);
             Source.TransferFrom(Destination, amount);
-        }
-
-        private MoneyTransferContext()
-        {
         }
 
         public static MoneyTransferContext Bind()

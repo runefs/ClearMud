@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" ToolsVersion="10.0">
+  <RuleHintPaths>
+    <Path>C:\Users\Rune\Documents\Visual Studio 2010\Projects\ClearMud\ClearMudSharp.Analysis\bin\Debug\ClearMudSharp.Analysis.dll</Path>
+  </RuleHintPaths>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CR1001" Action="Error" />
+  </Rules>
+</RuleSet>
